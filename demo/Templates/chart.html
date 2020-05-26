@@ -1,0 +1,40 @@
+ <!--Name: bansri shah
+    course: CST8333 Programming Language Research Project.
+    final project
+    student-number: 040920837-->
+
+
+{% extends 'base.html'%}
+    {% block content %}
+  <br/>
+<br/><br/>
+<div>
+     <h1 align="center" style="color:purple;">Presented by : Bansri Shah</h1>
+</div>
+<div>
+        <form class="row" action="" method="POST">
+            {% csrf_token %}
+
+<div class="card" style="background-color: pink">
+	  <div class="card-body" style="background" >
+ <div ALIGN="CENTER" >
+
+         <label for="" align="center" >  age:</label>
+                <input type="text" name="age">
+     <br/>
+                <label for="">Sex:</label>
+                <input type="text" name="sex">
+
+
+                 </div>
+ </div> </div>
+            <input  type="submit"  value="submit">
+        </form>
+    </div>
+ <div id="bar">{{ output|safe }}</div>
+
+<br/>
+
+</body>
+  {% endblock %}
+</html>

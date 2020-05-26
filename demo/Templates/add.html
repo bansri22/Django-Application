@@ -1,0 +1,95 @@
+
+<!--Name: bansri shah
+    course: CST8333 Programming Language Research Project.
+    Assignment 3
+    student-number: 040920837-->
+ {% extends 'base.html'%}
+    {% block content %}
+
+ <br xmlns:background-color="http://www.w3.org/1999/xhtml"/>
+<br/>
+
+
+<br/>
+<div>
+     <h1 align="center" style="color:purple;">Presented by : Bansri Shah</h1>
+</div>
+<br/>
+<br/>
+<div class="container">
+    <div class="row">
+	   <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+
+	<div class="card" style="background-color: pink">
+	  <div class="card-body" style="background" >
+	   <h5 class="card-title text-center ">Add new data </h5>
+	   <form action="" method="post" >
+           {% csrf_token %}
+ <div class="form-group" >
+
+     <label for="">*REF_DATE:</label>
+    <input type="d" class="form-control"  name="d" >
+
+     <label for="GEO">*GEO:</label>
+    <input type="Name" class="form-control"  name="GEO" >
+
+     <label for="DGUID">*DGUID:</label>
+    <input type="Name" class="form-control"  name="DGUID">
+
+     <label for="SEX">*Sex:</label>
+    <input type="Name" class="form-control"  name="SEX">
+
+     <label for="AGEGROUP">*Age group:</label>
+    <input type="Name" class="form-control"  name="AGEGROUP" >
+
+     <label for="STUDENT">*Student response:</label>
+    <input type="Name" class="form-control"  name="STUDENT" >
+
+     <label for="UOM">*UOM:</label>
+    <input type="Name" class="form-control"  name="UOM" >
+
+     <label for="UOM_ID">*UOM_ID:</label>
+    <input type="Name" class="form-control"  name="UOM_ID" >
+
+     <label for="SCALAR">*SCALAR_FACTOR:</label>
+    <input type="Name" class="form-control"  name="SCALAR">
+
+     <label for="S_ID">*SCALAR_ID:</label>
+    <input type="Name" class="form-control"  name="S_ID" >
+
+     <label for="VECTOR">*VECTOR:</label>
+    <input type="Name" class="form-control"  name="VECTOR" >
+
+     <label for="C">*COORDINATE:</label>
+    <input type="Name" class="form-control"  name="C" >
+
+     <label for="VALUE">*VALUE:</label>
+    <input type="Name" class="form-control"  name="VALUE" >
+
+     <label for="STATUS">*STATUS:</label>
+    <input type="Name" class="form-control"  name="STATUS" >
+
+     <label for="SYMBOL">*SYMBOL:</label>
+    <input type="Name" class="form-control"  name="SYMBOL" >
+
+     <label for="TERMINATED">*TERMINATED:</label>
+    <input type="Name" class="form-control"  name="TERMINATED" >
+
+     <label for="DECIMAL">*DECIMALS:</label>
+    <input type="Name" class="form-control"  name="DECIMAL" >
+<br/>
+<h5 class="text-center">
+    <button type="submit" class="btn btn-info btn-block">Add</button>
+ </h5>
+
+ </div>
+       </form>
+
+      </div>
+    </div>
+       </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

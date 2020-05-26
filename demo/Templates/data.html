@@ -1,0 +1,68 @@
+<!--Name: bansri shah
+    course: CST8333 Programming Language Research Project.
+    Assignment 3
+    student-number: 040920837-->
+  {% extends 'base.html'%}
+    {% block content %}
+
+<br/>
+  <br/><br/>
+<div>
+     <h1 align="center" style="color:purple;">Presented by : Bansri Shah</h1>
+</div>
+<tr role="main" class="container">
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <table bgcolor="pink" border="5" ALIGN="CENTER" >
+        <tbody>
+
+<tr>
+        <th>REF_DATE</th>
+        <th>GEO</th>
+        <th>DGUID</th>
+        <th>Sex</th>
+        <th>Agegroup</th>
+        <th>Studentresponse</th>
+        <th>UOM</th>
+        <th>UOM_ID</th>
+        <th>SCALAR_FACTOR</th>
+        <th>SCALAR_ID</th>
+        <th>VECTOR</th>
+        <th>COORDINATE</th>
+     <th>VALUE</th>
+     <th>STATUS</th>
+     <th>SYMBOL</th>
+      <th>TERMINATED</th>
+    <th>DECIMALS</th>
+
+    </tr>
+        <tr>
+
+
+
+              <td>{{data.REF_DATE}}</td>
+              <td>{{data.GEO}}</td>
+              <td>{{data.DGUID}}</td>
+              <td>{{data.Sex}}</td>
+              <td>{{data.Agegroup}}</td>
+
+              <td>{{data.Studentresponse}}</td>
+               <td>{{data.UOM}}</td>
+              <td>{{data.UOM_ID}}</td>
+              <td>{{data.SCALAR_FACTOR}}</td>
+              <td>{{data.SCALAR_ID}}</td>
+              <td>{{data.VECTOR}}</td>
+               <td>{{data.COORDINATE}}</td>
+          <td>{{data.VALUE}}</td>
+            <td>{{ data.STATUS}}</td>
+            <td>{{ data.SYMBOL}}</td>
+            <td>{{ data.TERMINATED}}</td>
+             <td>{{ data.DECIMALS}}</td>
+
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+      {% endblock %}
+</html>

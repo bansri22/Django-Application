@@ -1,0 +1,54 @@
+ <!--Name: bansri shah
+    course: CST8333 Programming Language Research Project.
+    Assignment 3
+    student-number: 040920837-->
+  {% extends 'base.html'%}
+    {% block content %}
+  <br/>
+<br/><br/>
+<div>
+     <h1 align="center" style="color:purple;">Presented by : Bansri Shah</h1>
+</div>
+  <br/>
+    <br/>
+  <div ALIGN="CENTER" >
+        <br/>
+ <h3> Data from database !!!</h3>
+   </div>
+     <br/>   <br/>
+  <table bgcolor="pink" border="5" ALIGN="CENTER">
+      {% csrf_token %}
+        <tbody>
+        {% for i in data %}
+        <tr>
+
+              <td>{{i.REF_DATE}}</td>
+              <td>{{i.GEO}}</td>
+              <td>{{i.DGUID}}</td>
+              <td>{{i.Sex}}</td>
+              <td>{{i.Agegroup}}</td>
+
+              <td>{{i.Studentresponse}}</td>
+               <td>{{i.UOM}}</td>
+              <td>{{i.UOM_ID}}</td>
+              <td>{{i.SCALAR_FACTOR}}</td>
+              <td>{{i.SCALAR_ID}}</td>
+              <td>{{i.VECTOR}}</td>
+               <td>{{ i.COORDINATE}}</td>
+          <td>{{ i.VALUE}}</td>
+            <td>{{ i.STATUS}}</td>
+            <td>{{ i.SYMBOL}}</td>
+            <td>{{ i.TERMINATED}}</td>
+             <td>{{ i.DECIMALS}}</td>
+
+        </tr>
+        {% endfor %}
+
+
+
+        </tbody>
+  </table>
+
+</body>
+  {% endblock %}
+</html>
